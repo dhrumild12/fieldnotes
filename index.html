@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f6f2">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' data: https://*.google-analytics.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
   <meta name="description" content="Free future skills for students: practical, beginner-friendly paths in AI literacy, data, cybersecurity, and web development, with small projects and free learning resources.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Fieldnotes — Free Future Skills for Students">
@@ -14,6 +14,7 @@
   <link rel="canonical" href="https://dhrumild12.github.io/fieldnotes/">
   <title>Free Future Skills for Students | Fieldnotes</title>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Fieldnotes","url":"https://dhrumild12.github.io/fieldnotes/","description":"Free, practical student learning paths in AI literacy, data, cybersecurity, and web development."}</script>
+  <script src="analytics.js" defer></script>
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
@@ -65,7 +66,7 @@
 
     <section class="section progress-section" id="how">
       <div class="wrap progress-layout">
-        <div class="progress-copy"><div class="section-kicker">02 &nbsp; · &nbsp; Make it yours</div><h2>Learn a little.<br><em>Keep the proof.</em></h2><p>Pick a path, try the tiny projects, and mark what you’ve finished. Your progress stays in this browser, so you can come back whenever you like.</p><div class="privacy-note"><span>⌑</span><div><b>Private by default</b><small>No account, uploads, or tracking. Your checklist lives on this device.</small></div></div><button class="text-button" id="export-progress">Download my progress <span>↓</span></button></div>
+        <div class="progress-copy"><div class="section-kicker">02 &nbsp; · &nbsp; Make it yours</div><h2>Learn a little.<br><em>Keep the proof.</em></h2><p>Pick a path, try the tiny projects, and mark what you’ve finished. Your progress stays in this browser, so you can come back whenever you like.</p><div class="privacy-note"><span>⌑</span><div><b>Your checklist stays private</b><small>No account or uploads. Visit and engagement totals use Google Analytics.</small></div></div><button class="text-button" id="export-progress">Download my progress <span>↓</span></button></div>
         <div class="progress-preview"><div class="preview-header"><div><span class="tiny-label">YOUR FIELD GUIDE</span><h3 id="progress-title">A good place to begin</h3></div><span class="preview-icon">✳</span></div><div class="overall-progress"><div class="progress-track"><span id="overall-bar"></span></div><span id="overall-label">Choose a learning path</span></div><div id="active-progress" class="active-progress"></div><button class="clear-progress" id="clear-progress">Reset saved progress</button></div>
       </div>
     </section>
@@ -90,7 +91,7 @@
   <dialog class="quiz-dialog" id="quiz-dialog" aria-labelledby="quiz-title"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form><div class="section-kicker">A tiny compass</div><h2 id="quiz-title">What sounds fun to you?</h2><p>Pick the thing you’d most like to try. There’s no wrong answer.</p><div class="quiz-options" id="quiz-options"><button data-track="ai" class="quiz-option"><span>✳</span><b>Make sense of AI</b><small>How it works, what it can’t do, and how to use it thoughtfully.</small></button><button data-track="data" class="quiz-option"><span>▦</span><b>Find stories in data</b><small>Use real-world information to answer questions.</small></button><button data-track="cyber" class="quiz-option"><span>⌑</span><b>Protect people online</b><small>Learn how the internet works and how to make it safer.</small></button><button data-track="web" class="quiz-option"><span>⌘</span><b>Build something useful</b><small>Design and make a website, tool, or small app.</small></button></div><div class="quiz-result" id="quiz-result" hidden></div></dialog>
 
   <dialog class="track-dialog" id="track-dialog" aria-labelledby="track-title"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form><div id="track-detail"></div></dialog>
-  <dialog class="privacy-dialog" id="privacy-dialog" aria-labelledby="privacy-title"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form><div class="section-kicker">A note about privacy</div><h2 id="privacy-title">Your learning stays yours.</h2><p>This website is a static guide. It does not ask for your name, email, school, or passwords. It does not upload files, use advertising trackers, or send your checklist to a server.</p><p>Your chosen path and completed steps are saved only in this browser’s local storage. Clearing browser data removes them. Links to courses open third-party websites with their own privacy practices.</p><button class="button button-dark" id="privacy-close">Got it</button></dialog>
+  <dialog class="privacy-dialog" id="privacy-dialog" aria-labelledby="privacy-title"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form><div class="section-kicker">A note about privacy</div><h2 id="privacy-title">Your learning stays yours.</h2><p>Fieldnotes does not ask for your name, email, school, or password. It does not upload files or send your checklist to a server. Your chosen path and completed steps stay in this browser’s local storage.</p><p>To count visits, Fieldnotes uses Google Analytics. Its enhanced measurement also records page views, scrolls, outbound clicks, and other site interactions. Google receives browser and usage data for these reports. Fieldnotes does not use advertising features. Links to courses open third-party websites with their own privacy practices.</p><button class="button button-dark" id="privacy-close">Got it</button></dialog>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

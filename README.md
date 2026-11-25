@@ -4,7 +4,7 @@ A free static student guide to practical future skills. The site includes four g
 
 ## Privacy and security
 
-The site has no server, user accounts, forms, uploads, tracking scripts, external fonts, or third-party JavaScript. Checklist progress stays in the visitor's browser. A Content Security Policy limits scripts and styles to the site's own files. Course links open separately with `noopener noreferrer`.
+The site has no server, user accounts, forms, or uploads. Checklist progress stays in the visitor's browser. Google Analytics is used to count visits; its enhanced measurement also records page views, scrolls, outbound clicks, and other interactions. Analytics receives browser and usage data. No advertising features are enabled. The privacy note is shown on the website. A Content Security Policy limits scripts and network access to the site and Google Analytics endpoints. Course links open separately with `noopener noreferrer`.
 
 ## Search
 
@@ -19,4 +19,4 @@ This release includes page metadata, canonical URL, Open Graph metadata, WebSite
 
 ## Analytics
 
-No analytics provider is connected in this release. Static GitHub Pages does not provide a private, website-level visitor dashboard by itself. Add a privacy-conscious analytics property after choosing the provider; do not put private access tokens in these public files.
+The `analytics.js` file connects Google Analytics Measurement ID `G-MGPWD8W35K` for the Fieldnotes web stream. View site visits in [Google Analytics](https://analytics.google.com/analytics/web/) by selecting the **Fieldnotes** property. Data collection can take up to 48 hours to begin; realtime reports may show visits sooner.
