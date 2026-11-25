@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="description" content="Free future skills for students: practical, beginner-friendly paths in AI literacy, data, cybersecurity, and web development, with small projects and free learning resources.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fieldnotes — Free Future Skills for Students">
+  <meta property="og:description" content="Build useful skills one small project at a time. Explore free, student-friendly paths in AI, data, cybersecurity, and the web.">
+  <meta property="og:url" content="https://dhrumild12.github.io/fieldnotes/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://dhrumild12.github.io/fieldnotes/">
+  <title>Free Future Skills for Students | Fieldnotes</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Fieldnotes","url":"https://dhrumild12.github.io/fieldnotes/","description":"Free, practical student learning paths in AI literacy, data, cybersecurity, and web development."}</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Fieldnotes home"><span class="brand-mark" aria-hidden="true">f.</span> fieldnotes</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#paths">Learning paths</a><a href="#how">How it works</a><a href="#sources">Free resources</a>
+      </nav>
+      <a class="header-cta" href="#paths">Find your next step <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#paths">Learning paths</a><a href="#how">How it works</a><a href="#sources">Free resources</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> A free guide for curious students</div>
+        <h1>Your future is a<br><em>work in progress.</em></h1>
+        <p class="hero-lede">Build useful skills, one small project at a time. Explore practical paths in AI, data, cybersecurity, and the web—wherever you’re starting from.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#paths">Explore learning paths <span aria-hidden="true">→</span></a><button class="button button-quiet" id="quiz-open"><span class="sparkle" aria-hidden="true">✳</span> Help me choose</button></div>
+        <div class="trust-line"><span class="avatar-stack" aria-hidden="true"><i>✳</i><i>↗</i><i>◎</i></span><span>Open to every learner. Start free. Go at your pace.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a notebook and a path leading toward a sunny horizon" role="img">
+        <div class="art-sun"></div><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="hill hill-back"></div><div class="hill hill-front"></div><div class="path-ribbon"></div>
+        <div class="note-card"><div class="note-top"><span>FIELD NOTE&nbsp; 01</span><span class="note-star">✳</span></div><div class="note-title">Learn by<br>making.</div><div class="note-rule"></div><div class="note-lines"><i></i><i></i><i></i></div><div class="note-sticker">YOUR NEXT<br>SMALL STEP <b>↗</b></div></div>
+        <div class="floating-pill pill-a"><span>✳</span> 20 min a day</div><div class="floating-pill pill-b"><span>↗</span> Your pace, your path</div>
+        <div class="art-caption">A little progress adds up.</div>
+      </div>
+    </section>
+
+    <section class="proof-strip wrap" aria-label="About this guide"><div><b>4</b><span>starter paths</span></div><div><b>100%</b><span>free to explore</span></div><div><b>0</b><span>accounts needed</span></div><p>Path themes follow <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/3-skills-outlook/" target="_blank" rel="noopener noreferrer">skills employers expect to grow ↗</a></p></section>
+
+    <section class="section paths-section" id="paths">
+      <div class="wrap">
+        <div class="section-kicker">01 &nbsp; · &nbsp; Pick a direction</div>
+        <div class="section-heading"><div><h2>What are you<br><em>curious about?</em></h2></div><p>These short paths turn big, intimidating subjects into a handful of doable steps. No perfect plan required.</p></div>
+        <div class="filter-row"><div class="filter-tabs" role="group" aria-label="Filter learning paths"><button class="filter-tab active" data-filter="all" aria-pressed="true">All paths</button><button class="filter-tab" data-filter="beginner" aria-pressed="false">Start from zero</button><button class="filter-tab" data-filter="creative" aria-pressed="false">Creative + human</button></div><label class="search-box"><span aria-hidden="true">⌕</span><input id="path-search" type="search" placeholder="Search a skill…" aria-label="Search learning paths"></label></div>
+        <div class="path-grid" id="path-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden>No paths match that search. Try “AI”, “web”, or “people”.</div>
+      </div>
+    </section>
+
+    <section class="section progress-section" id="how">
+      <div class="wrap progress-layout">
+        <div class="progress-copy"><div class="section-kicker">02 &nbsp; · &nbsp; Make it yours</div><h2>Learn a little.<br><em>Keep the proof.</em></h2><p>Pick a path, try the tiny projects, and mark what you’ve finished. Your progress stays in this browser, so you can come back whenever you like.</p><div class="privacy-note"><span>⌑</span><div><b>Private by default</b><small>No account, uploads, or tracking. Your checklist lives on this device.</small></div></div><button class="text-button" id="export-progress">Download my progress <span>↓</span></button></div>
+        <div class="progress-preview"><div class="preview-header"><div><span class="tiny-label">YOUR FIELD GUIDE</span><h3 id="progress-title">A good place to begin</h3></div><span class="preview-icon">✳</span></div><div class="overall-progress"><div class="progress-track"><span id="overall-bar"></span></div><span id="overall-label">Choose a learning path</span></div><div id="active-progress" class="active-progress"></div><button class="clear-progress" id="clear-progress">Reset saved progress</button></div>
+      </div>
+    </section>
+
+    <section class="section resources-section" id="sources">
+      <div class="wrap"><div class="section-kicker">03 &nbsp; · &nbsp; Good places to learn</div><div class="section-heading"><div><h2>Start with something<br><em>open and trusted.</em></h2></div><p>Explore these independent courses and guides. Some may ask you to create an account on their own website.</p></div>
+        <div class="resource-grid">
+          <a class="resource-card" href="https://www.kaggle.com/learn" target="_blank" rel="noopener noreferrer"><span class="resource-icon green">▦</span><span class="resource-type">DATA · AI</span><b>Kaggle Learn</b><span>Short, hands-on lessons in Python, data, and machine learning.</span><span class="resource-link">Explore free courses ↗</span></a>
+          <a class="resource-card" href="https://cs50.harvard.edu/x/" target="_blank" rel="noopener noreferrer"><span class="resource-icon lilac">⌘</span><span class="resource-type">COMPUTER SCIENCE</span><b>CS50x by Harvard</b><span>A free introduction to computer science and programming for all.</span><span class="resource-link">Start CS50x ↗</span></a>
+          <a class="resource-card" href="https://www.cisco.com/site/us/en/learn/training-certifications/training/skills-for-all.html" target="_blank" rel="noopener noreferrer"><span class="resource-icon peach">⌑</span><span class="resource-type">CYBERSECURITY</span><b>Cisco Skills for All</b><span>Free online technology and cybersecurity learning pathways.</span><span class="resource-link">Browse learning ↗</span></a>
+          <a class="resource-card" href="https://www.unesco.org/en/digital-education/artificial-intelligence" target="_blank" rel="noopener noreferrer"><span class="resource-icon yellow">✳</span><span class="resource-type">AI · RESPONSIBILITY</span><b>UNESCO on AI & education</b><span>Understand human-centred, inclusive, and responsible AI in education.</span><span class="resource-link">Read the guide ↗</span></a>
+        </div>
+        <p class="resource-footnote">Courses and availability belong to their providers and can change. Fieldnotes is independent and does not promise jobs, credentials, or academic credit.</p>
+      </div>
+    </section>
+
+    <section class="closing wrap"><div class="closing-mark">✳</div><div><div class="section-kicker">No rush. No perfect starting point.</div><h2>One curious step<br>is a real beginning.</h2></div><a class="button button-dark" href="#paths">Find your first step <span>→</span></a></section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">f.</span> fieldnotes</a><p>Small steps. Useful skills. Room for everyone.</p><div><a href="#privacy" id="privacy-link">Privacy</a><a href="#sources">Learning sources</a></div><small>© <span id="year"></span> Fieldnotes · An independent student resource</small></div></footer>
+
+  <dialog class="quiz-dialog" id="quiz-dialog" aria-labelledby="quiz-title"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form><div class="section-kicker">A tiny compass</div><h2 id="quiz-title">What sounds fun to you?</h2><p>Pick the thing you’d most like to try. There’s no wrong answer.</p><div class="quiz-options" id="quiz-options"><button data-track="ai" class="quiz-option"><span>✳</span><b>Make sense of AI</b><small>How it works, what it can’t do, and how to use it thoughtfully.</small></button><button data-track="data" class="quiz-option"><span>▦</span><b>Find stories in data</b><small>Use real-world information to answer questions.</small></button><button data-track="cyber" class="quiz-option"><span>⌑</span><b>Protect people online</b><small>Learn how the internet works and how to make it safer.</small></button><button data-track="web" class="quiz-option"><span>⌘</span><b>Build something useful</b><small>Design and make a website, tool, or small app.</small></button></div><div class="quiz-result" id="quiz-result" hidden></div></dialog>
+
+  <dialog class="track-dialog" id="track-dialog" aria-labelledby="track-title"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form><div id="track-detail"></div></dialog>
+  <dialog class="privacy-dialog" id="privacy-dialog" aria-labelledby="privacy-title"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form><div class="section-kicker">A note about privacy</div><h2 id="privacy-title">Your learning stays yours.</h2><p>This website is a static guide. It does not ask for your name, email, school, or passwords. It does not upload files, use advertising trackers, or send your checklist to a server.</p><p>Your chosen path and completed steps are saved only in this browser’s local storage. Clearing browser data removes them. Links to courses open third-party websites with their own privacy practices.</p><button class="button button-dark" id="privacy-close">Got it</button></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
